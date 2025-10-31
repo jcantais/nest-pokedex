@@ -18,7 +18,7 @@ npm i -g @nest/cli
 
 4. Levantar la base de datos
 ```
-docker-composer up -d
+docker-compose up -d
 ```
 
 5. Clonar el archivo ``.env.template`` y renombrar la copia a ``.env``
