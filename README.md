@@ -5,18 +5,36 @@
 # Ejecutar en desarrollo
 
 1. Clonar el repositorio
+
 2. Ejecutar
 ```
 npm install
 ```
+
 3. Tener Nest CLI instalado
 ```
 npm i -g @nest/cli
 ```
+
 4. Levantar la base de datos
 ```
 docker-composer up -d
 ```
+
+5. Clonar el archivo ``.env.template`` y renombrar la copia a ``.env``
+
+6. Dar valor a las variables de entorno definidas en el ``.env``
+
+7. Ejecutar la aplicación en dev:
+```
+npm run start:dev
+```
+
+8. Reconstruir la base de datos con la semilla
+```
+http://localhost:3000/api/v2/seed
+```
+
 ## Stack usado
 * MongoDB
 * Nest
