@@ -34,4 +34,7 @@ import { JoiValidationSchema } from './config/joi.validation';
   ],
 })
 export class AppModule {
+  constructor() {
+    console.log('MongoDB ->', String(process.env.MONGODB));
+  }
 }
